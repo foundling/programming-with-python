@@ -1,5 +1,6 @@
 {
+    "root": "./chapters",
     "structure": {
-        "readme": "chapters/intro.md"
+        "readme": "intro.md"
     }
 }
