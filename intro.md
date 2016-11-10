@@ -8,7 +8,7 @@ I like to ask myself questions, so here goes a few:
 
 Fundamentals are important. This book emphasizes covering fundamentals from a variety of angles so you simply can't forget them.
 
-Also, there's the gap.  I'm talking about the gap between the books for anyone and the books for students at an educational institution.  The book for anyone often shies away from theory, while the book for the student necessarily presupposes that the student has calculus or statistics fresh in his or her mind. My hope is that I can tread somewhere in between these two approaches, teaching actual computer science as well as developing practical skills like problem-solving, creativity and meta-cognition(*). 
+Also, there's the gap.  I'm talking about the gap between the books for anyone and the books for students at an educational institution.  The book for anyone often shies away from theory, while the book for the student necessarily presupposes that the student has calculus or statistics fresh in his or her mind. My hope is that I can tread somewhere in between these two approaches, teaching actual computer science as well as developing practical skills like problem-solving, creativity and meta-cognition. 
 
 **Q: And why does this book use Python?**
 
