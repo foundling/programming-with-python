@@ -1,6 +1,6 @@
 # Aim of This Book
 
-If you are new to programming or want to try it out but aren't really sure what it's all about, then this book is for you.  My goal is to build your fundamental skills and teach you how to use these skills to solve problems that you find interesting. 
+If you are new to programming or want to try it out but aren't really sure what it's all about, then this book is for you.  My goal is to build fundamental skills in thinking programmatically and to teach you how to apply these skills to problems you find interesting. 
 
 I like to ask myself questions, so here goes a few:
 
