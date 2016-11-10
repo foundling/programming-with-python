@@ -1,3 +1,3 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Chapter 1: Names and Values](names_and_values.md)
