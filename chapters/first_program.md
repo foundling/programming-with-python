@@ -62,11 +62,11 @@ and then ask yourself the following questions:
 
 ## Errors Tell You Where to Look and What to Look for 
 
-So the name of the error is ... well ...  **'NameError'**.  So I guess we should look into what that is. I went ahead and Googled 'Python3 NameError' and have extracted the relevant bit for us:
+The name of the error is ... well ...  **'NameError'**.  We should look into what that is. I went ahead and Googled 'Python3 NameError' and have extracted the relevant bit for us:
 
 > Raised when a local or global name is not found. 
 
-Okay, so *something* that Python calls a 'name' was not found. What was not found? We should look at the line the error is telling us about, line 2. 
+Okay, so *something* that Python calls a 'name' was not found. What was not found? Let's look at the line the error is telling us about, line 2. 
 
 Okay, here it is:
 
@@ -105,14 +105,16 @@ If we run our program again, we should see the output we hoped to get.
 
 # What is a Name?
 
-Success! We fixed the program.  But we did so largely through thinking by analogy.  We saw a similarity between another line of code that didn't have a bug and fixed the problematic line by reproducing the working structure. But this didn't get us to the point of understanding of why the **NameError** really occurred and how to avoid running into it in the future.
+Success! We fixed the program.  But we did so largely through thinking by analogy: we saw a similarity between another line of code that didn't have a bug and fixed the problematic line by reproducing the working structure. But this didn't get us to the point of understanding of why the **NameError** really occurred and how to avoid running into it in the future.
 
 Let's think about what we know now. When `Chicago` had no quotes around it, Python told us two things:
 
 - `Chicago` is a name
 - the name `Chicago` can't be found anywhere (locally or globally) 
 
-But, when we put quotes around it, the **NameError** disappeared. I'm going to nudge us forward a little by asserting that when `Chicago` is surrounded in quotes, it is no longer a name. It's now a value.
+But, when we put quotes around it, the **NameError** disappeared. I'm going to nudge us forward a little by asserting this:
+
+> When `Chicago` is surrounded in quotes, it is no longer a name. It's now a value.
 
 Let's think of a name for now as **a connection to a value**. The name `first_name` connects to the value `'Vera'`. And for a moment, let's think of a program in a very limited sense as a collection of names connected to values. We give values names in order to refer to them later and do interesting things with them. And the referral process is conceptually like looking up someone's phone number in a telephone book. If you look up a person's name and it's in the phone book, you get his or her phone number. Think of a Python program as a thing that runs in a larger Python environment that uses a storage mechanism conceptually like this phone book.  When we, the programmer, write:
 
@@ -123,3 +125,7 @@ we are saying to the Python environment: "I want to store the value 'Vera' under
     print(first_name)
 
 We are asking the environment to go to its 'phone book' and retrieve the value listed under the name `first_name` and print that value.  
+
+To recap what our error was: we said to the Python phonebook, "here is a name, city. please connect this name to a value that doesn't exist".  Python understandably threw its hands up and returned a **NameError**.
+
+
