@@ -1,3 +1,3 @@
 # Summary
 
-* [Chapter 1: Names and Values](names_and_values.md)
+* [Chapter 1: Our First Program ](first_program.md)
