@@ -153,6 +153,6 @@ the name `version` points to the value `2`, but 2 is a number, or more specifica
 
 We will no doubt dive more fully into the type of values that Python makes available to us, but for now the major thing to take away is the fact that values are the data that our program ultimately works with and names are the mechanisms by which we can organize them in a humanly meaningful way. 
 
-# Conclusion: Back to that Error
+# Conclusion: Back to that NameError
 
 Let's recap the error. We said to the Python phonebook, "here is a name, `city`. Please connect `city` to value that doesn't exist".  Python understandably threw its hands up and returned a **NameError**.
