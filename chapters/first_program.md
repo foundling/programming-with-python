@@ -1,6 +1,6 @@
 # Our First Program
 
-Before we get into the atomic parts of Python, let's dive right in and write a script so we know what it *feels* like to write some code. Type the following out manually and then run it:
+Before we get into the atomic parts of Python, let's dive right in and write a script so we know what it ***feels*** like to write some code. Type the following out manually and then run it:
 
     first_name = 'Vera' 
     age = 42 
@@ -13,7 +13,7 @@ Before we get into the atomic parts of Python, let's dive right in and write a s
     for thing in favorite_things:
         print(thing)
 
-To run this script without errors, you need to copy it exactly as it is. A common 'gotcha' for those new to Python is indentation. Indentation is necessary and incorrect indentation will cause errors. When you see indentation, my advice is to always type 4 spaces (and not a tab).  Do your best to power through until you see the correct output, which should look similar to this:
+To run this script without errors, you need to copy it exactly as it is. Do your best to power through until you see the correct output, which should look similar to this:
 
     first_name: Vera
     age: 42
@@ -22,13 +22,18 @@ To run this script without errors, you need to copy it exactly as it is. A commo
     Soft Rock
     Philosophy
 
+
+**Gotcha Warning - Indentation**: Indentation is structurally significant in Python. Incorrect indentation can cause obvious errors (your program stops running altogether) and not-so-obvious errors (your program runs but does the wrong thing). When you indent, my advice is to always type 4 spaces. 
+
+**Gotcha Warning - Tabs**: Avoid tabs because text-editors vary in how they represent tabs (some convert to spaces), but they do not vary in how they represent spaces. It is possible to configure many text editors to automatically convert tabs to spaces. 
+
 ## Reflect! 
 
 Congratulations, you just wrote your first Python program! This isn't easy, so take a minute and reflect on your success. What do you think you did here? Try to formulate any questions you might have.
 
 ## Our First Error: The NameError
 
-Now that we've done something right, let's do something wrong. I am going to take an 'error-first' approach in this guide, as it more closely aligns with what writing code is like in the real world.  Learning how to make sense of error messages is a very efficient way to learn a programming lanaguage.
+Now that we've done something right, let's do something wrong. I am going to take an 'error-first' approach in this guide, as it more closely aligns with what writing code is like in the real world.  Learning how to make sense of error messages is a very efficient way to learn a programming language.
 
 Let's add two lines in between `first_name` and `age`:
 
@@ -116,16 +121,38 @@ But, when we put quotes around it, the **NameError** disappeared. I'm going to n
 
 > When `Chicago` is surrounded in quotes, it is no longer a name. It's now a value.
 
-Let's think of a name for now as **a connection to a value**. The name `first_name` connects to the value `'Vera'`. And for a moment, let's think of a program in a very limited sense as a collection of names connected to values. We give values names in order to refer to them later and do interesting things with them. And the referral process is conceptually like looking up someone's phone number in a telephone book. If you look up a person's name and it's in the phone book, you get his or her phone number. Think of a Python program as a thing that runs in a larger Python environment that uses a storage mechanism conceptually like this phone book.  When we, the programmer, write:
+Without pausing to think about what a value really is just yet, we can think of a name for now as **a connection to a value**. The name `first_name` connects to the value `'Vera'`. And for a moment, let's think of a program in a very limited sense as a collection of names connected to values. We name values in order to refer to them later so we can do interesting and useful things with them. 
+
+The referral process is conceptually like looking up someone's phone number in a telephone book. If you look up a person's name and it's in the phone book, you get his or her phone number back. When we write:
 
     first_name = 'Vera'
 
-we are saying to the Python environment: "I want to store the value 'Vera' under the name 'first_name'". When I write code like:
+we are saying to the Python environment: "I want to store the value 'Vera' under the name 'first_name'". And when we write:
 
     print(first_name)
 
-We are asking the environment to go to its 'phone book' and retrieve the value listed under the name `first_name` and print that value.  
+we are asking the Python environment to go to its 'phone book' and retrieve the value listed under the name `first_name` and print that value.
 
-To recap what our error was: we said to the Python phonebook, "here is a name, city. please connect this name to a value that doesn't exist".  Python understandably threw its hands up and returned a **NameError**.
+# What is a Value?
 
+We can connect names with other names, too. In fact, we can have long chains of connections between names and other names, as long as those chains all eventually end up connecting to a value. To conceptualize a name pointing to another name, think of it like a phone book in which you look up a name, and when you find that name, it says, 'see this other name'.  And then you look up the other name, it gives you the phone number you are looking for. 
 
+So what's a value?
+
+A value is something that a computer can directly act upon and use for computation. In this example:
+
+    version = '2.0.1'
+
+the value that `version` points to is '2.0.1.'. You might wonder what sort of value this is.  It's a string, or a sequence of characters meant to be interpreted literally by a human.
+
+In this example:
+    
+    version = 2
+
+the name `version` points to the value `2`, but 2 is a number, or more specifically an integer.
+
+We will no doubt dive more fully into the type of values that Python makes available to us, but for now the major thing to take away is the fact that values are the data that our program ultimately works with and names are the mechanisms by which we can organize them in a humanly meaningful way. 
+
+# Conclusion: Back to that Error
+
+Let's recap the error. We said to the Python phonebook, "here is a name, `city`. Please connect `city` to value that doesn't exist".  Python understandably threw its hands up and returned a **NameError**.
