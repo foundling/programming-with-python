@@ -1,16 +1,15 @@
-# Aim of This Book
+# Intended Audience
 
-If you are new to programming or want to try it out but aren't really sure what it's all about, then this book is for you.  My goal is to build fundamental skills in thinking programmatically and to teach you how to apply these skills to problems you find interesting. 
-
-I like to ask myself questions, so here goes a few:
+If you are new to programming or want to try it out but aren't really sure what it's all about, then this book is for you. It interleaves the 'practical' and 'theoretical', and is founded on the assumption that you ultimately find rewarding the 'brain-hurt' feeling of diving into a new system of thinking. But I'm not here to leave anyone in the dark.  You should expect practical examples meant to develop your ability to build readable and concise programs that do things you find interesting and challenging.
 
 **Q: With so many introductory books out there, why have you written another one?** 
 
+I love Python. It was my first programming language and it is still a favorite. I believe it has a lot to teach about design simplicity and strength.
+
 Fundamentals are important. This book emphasizes covering fundamentals from a variety of angles so you simply can't forget them.
 
-Also, there's the gap.  I'm talking about the gap between the books for anyone and the books for students at an educational institution.  The book for anyone often shies away from theory, while the book for the student necessarily presupposes that the student has calculus or statistics fresh in his or her mind. My hope is that I can tread somewhere in between these two approaches, teaching actual computer science as well as developing practical skills like problem-solving, creativity and meta-cognition. 
+The audience gap. I'm talking about the gap between the books for anyone and the books for students at an educational institution.  The book for anyone often shies away from theory while the computer science textbook usually delivers really useful and otherwise intriguing insights on how to **think** in an altogether desiccated form. (I say this as person who enjoys dense and technically-specific texts). Just as I hope this book challenges you to push yourself into the unknown, the very endeavor of writing it is a personal challenge to reach an audience that is traditionally overlooked.
 
 **Q: And why does this book use Python?**
 
 The common truism is that Python is a good beginner language.  I concede this is true: Python code is fairly intuitive to write and read.  It has a great standard library and a great community as well. There is also a long term advantage, which comes from working in a language designed more or less by a single person who happens to be a great, practical-minded, language designer. You learn patterns that seem like facts now, but later on reveal themselves as wise choices. There is a reason why seasoned software developers with years in many languages come to Python and stay with Python. 
-
