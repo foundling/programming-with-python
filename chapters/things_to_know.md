@@ -1,30 +1,29 @@
 Indentation matters.
 
-def print_list(l):
+    def print_list(l):
 
-    for item in l:
-        print item 
+        for item in l:
+            print item 
 
 It is dynamic:
-    
-person = { 'name': 'alex' } 
 
-# wait, I change my mind
-person['name'] = 'Al';
+    person = { 'name': 'alex' } 
 
-# wait, I change my mind
-person = 'robot'
+    # wait, I change my mind
+    person['name'] = 'Al';
 
-# wait, I change my mind
-person = 1 
+    # wait, I change my mind
+    person = 'robot'
 
-# don't do that sort of stuff, btw
+    # wait, I change my mind
+    person = 1 
 
-person = { 
-    'name': 'alex', 
-    'status': 'wiser'
-}
+    # don't do that sort of stuff, btw
 
+    person = { 
+        'name': 'alex', 
+        'status': 'wiser'
+    }
 
 and strongly typed:
 
@@ -55,5 +54,4 @@ It allows you to be succinct.
         if line.strip().startswith('#') 
 
     ] 
-
 
