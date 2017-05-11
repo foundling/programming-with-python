@@ -1,0 +1,35 @@
+{% extends "chapters/chapter_base.html" %}
+
+{% block styles %}
+  {% include "styles/chapter_styles.html" %}
+{% endblock %}
+
+{% block menu %}
+    {% include "components/menu.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="language-python content">
+  {{content | markdown}}
+  </div>
+
+{% endblock %}
+
+{% block exercises %}
+  {% if exercises %}
+  <div class="language-python exercises">
+    <h1>Exercises</h1>
+    {{exercises | markdown}}
+  </div>
+  {% endif %}
+
+{% endblock %}
+
+{% block footer %}
+  {% include "footer.html" %}
+{% endblock %}
+
+{% block scripts %}
+  {% include "scripts/chapter_scripts.html" %}
+{% endblock %}
