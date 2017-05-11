@@ -21,7 +21,7 @@ Here are some examples of sequences in Python by type:
     (4,3,2,1)
 
     # a list of lists
-    [[4,3,2,1],[4,3,2,1],[4,3,2,1]]
+    [[4,3,2,1], [4,3,2,1], [4,3,2,1]]
 
     # a tuple of tuples
     ((4,1), (3,0), (2,0), (0,1))
@@ -34,7 +34,6 @@ An **iterable** is a Python object with a special interface designed to let you 
 Say you create an iterable called `letters`:
 
     letters = ['a','b','c'] 
-
 
 `letters` is both a list and an iterable and this is because **lists are iterables**.    
 
