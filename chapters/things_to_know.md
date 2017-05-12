@@ -7,23 +7,12 @@ Indentation matters.
 
 It is dynamic:
 
-    person = { 'name': 'alex' } 
+    1 + 1
+    # 2
 
-    # wait, I change my mind
-    person['name'] = 'Al';
+    ['a','b','c'] + ['d','e','f']
+    # ['a','b','c','d','e','f']
 
-    # wait, I change my mind
-    person = 'robot'
-
-    # wait, I change my mind
-    person = 1 
-
-    # don't do that sort of stuff, btw
-
-    person = { 
-        'name': 'alex', 
-        'status': 'wiser'
-    }
 
 and strongly typed:
 
